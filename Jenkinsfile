@@ -15,7 +15,7 @@ pipeline{
             }
             stage('continuous deploy') {
             steps {
-                sh 'cp .jenkins/workspace/GOL@2/gameoflife.war /mnt/apache-tomcat-9.0.56/webapps'
+                sh 'cp /.jenkins/workspace/GOL@2/gameoflife-web/target/gameoflife.war /mnt/apache-tomcat-9.0.56/webapps'
             }
                
             }
