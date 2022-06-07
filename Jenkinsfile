@@ -4,7 +4,7 @@ pipeline{
     stages {
         stage('continuous download') {
             steps {
-                git 'https://github.com/prasadvekhande07/game-of-life.git'
+                git 'https://github.com/mohan0306/game-of-life.git'
             }
                
         }
