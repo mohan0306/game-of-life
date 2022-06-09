@@ -16,8 +16,8 @@
     - name: unzip tomcat
       ansible.builtin.unarchive: src=/root/mnt/apache-tomcat-9.0.63.zip dest=/root/mnt remote_src=yes
 
-   - name: change permission
-     shell: 'chmod -R 777 /root/mnt/apache-tomcat-9.0.63.zip/bin'
+    - name: change permission
+      shell: 'chmod -R 777 /root/mnt/apache-tomcat-9.0.63.zip/bin'
 
 
     - name: Run Tomcat
