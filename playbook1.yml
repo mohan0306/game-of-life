@@ -24,5 +24,5 @@
       command: nohup /root/mnt/apache-tomcat-9.0.63.zip/bin/startup.sh
 
     - name: deploy sample war
-      action: copy src=/mnt/Jenkins_path/workspace/GOL@2/gameoflife-web/target/gameoflife.war dest=/root/mnt/apache-tomcat-9.0.63.zip/webapps
+      action: copy src=/root/mnt/Jenkins_path/workspace/GOL@2/gameoflife-web/target/gameoflife.war dest=/root/mnt/apache-tomcat-9.0.63.zip/webapps
 
