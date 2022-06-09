@@ -4,7 +4,7 @@
 
   tasks:
     - name: creating mnt Dir
-      shell: 'sudo mkdir /mnt'
+      shell: 'mkdir /mnt'
     - name: download tomcat
       action: get_url url=https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.56/bin/apache-tomcat-9.0.56.zip dest=/mnt
 
