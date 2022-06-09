@@ -17,12 +17,12 @@
       ansible.builtin.unarchive: src=/root/mnt/apache-tomcat-9.0.63.zip dest=/root/mnt remote_src=yes
 
     - name: change permission
-      shell: 'chmod -R 777 /root/mnt/apache-tomcat-9.0.63.zip/bin'
+      shell: 'chmod -R 777 /root/mnt/apache-tomcat-9.0.63/bin'
 
 
     - name: Run Tomcat
-      command: nohup /root/mnt/apache-tomcat-9.0.63.zip/bin/startup.sh
+      command: nohup /root/mnt/apache-tomcat-9.0.63/bin/startup.sh
 
     - name: deploy sample war
-      action: copy src=/root/mnt/Jenkins_path/workspace/GOL@2/gameoflife-web/target/gameoflife.war dest=/root/mnt/apache-tomcat-9.0.63.zip/webapps
+      action: copy src=/root/mnt/Jenkins_path/workspace/GOL@2/gameoflife-web/target/gameoflife.war dest=/root/mnt/apache-tomcat-9.0.63/webapps
 
