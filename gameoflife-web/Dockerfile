@@ -1,3 +1,4 @@
+# Docker File
 FROM tomcat:8-jre8
 
 RUN rm -rf /usr/local/tomcat/webapps/*
