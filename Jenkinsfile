@@ -30,11 +30,11 @@ pipeline{
             }
                
             }
-        // stage('continuous Deliver on prod') {
-        //     steps {
-        //         sh 'ansible-playbook playbook1.yml  -b '
-        //     }
-        // }
+        stage('continuous Deliver on prod') {
+            steps {
+                sh 'ansible-playbook playbook1.yml  -b '
+            }
+        }
     }
    
 }
