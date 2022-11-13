@@ -59,15 +59,16 @@ pipeline{
             stage('continuous deploy') {
             steps {
                 sh 'cp /root/.jenkins/workspace/Game_Of_life/gameoflife-web/target/gameoflife.war /mnt/apache-tomcat-9.0.68/webapps'
-//                 scp '/root/.jenkins/workspace/Game_Of_life/gameoflife-web/target/gameoflife.war root@172.31.86.205:/mnt'
+//              sh 'scp /root/.jenkins/workspace/Game_Of_life/gameoflife-web/target/gameoflife.war ansible@172.31.86.205:/mnt'
             }
                
             }
-//         stage('continuous Deliver on prod') {
-//             steps {
+        stage('continuous Deliver on prod') {
+            steps {
+                sh 'scp /root/.jenkins/workspace/Game_Of_life/gameoflife-web/target/gameoflife.war ansible@172.31.86.205:/mnt'
 //                 sh 'ansible-playbook playbook1.yml  -b '
-//             }
-//         }
+            }
+        }
     }
    
 }
