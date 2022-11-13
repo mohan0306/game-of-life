@@ -59,7 +59,7 @@ pipeline{
             stage('continuous deploy') {
             steps {
                 sh 'cp /root/.jenkins/workspace/Game_Of_life/gameoflife-web/target/gameoflife.war /mnt/apache-tomcat-9.0.68/webapps'
-                scp /root/.jenkins/workspace/Game_Of_life/gameoflife-web/target/gameoflife.war ansible@172.31.86.205:/mnt
+                scp '/root/.jenkins/workspace/Game_Of_life/gameoflife-web/target/gameoflife.war ansible@172.31.86.205:/mnt'
             }
                
             }
