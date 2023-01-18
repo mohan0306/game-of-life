@@ -66,7 +66,7 @@ pipeline{
             }
         stage('continuous Deliver on pre-prod') {
             steps {
-                sh 'scp /ansible/.jenkins/workspace/Game_Of_life/gameoflife-web/target/gameoflife.war ansible@172.31.86.205:/mnt'
+                sh 'scp /root/.jenkins/workspace/Demo_tomcat/gameoflife-web/target/gameoflife.war ansible@172.31.86.205:/mnt/apache-tomcat-9.0.71/webapps'
 //                 sh 'ansible-playbook playbook1.yml  -b '
             }
         }
