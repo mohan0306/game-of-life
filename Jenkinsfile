@@ -26,7 +26,8 @@
 //             }
 //             stage('continuous deploy') {
 //             steps {
-//                 sh 'cp /mnt/Jenkins_path/workspace/GOL@2/gameoflife-web/target/gameoflife.war /root/mnt/apache-tomcat-9.0.63/webapps'
+//                 sh 'cp /mnt/Jenkins_path/workspace/GOL@2/gameoflife-web/target/gameoflife.war /root/mnt/apache-tomcat-9.0.71/webapps
+'
 //             }
                
 //             }
@@ -58,7 +59,8 @@ pipeline{
             }
             stage('continuous deploy') {
             steps {
-                sh 'cp /root/.jenkins/workspace/Game_Of_life/gameoflife-web/target/gameoflife.war /mnt/apache-tomcat-9.0.68/webapps'
+                sh 'cp /root/.jenkins/workspace/Game_Of_life/gameoflife-web/target/gameoflife.war /root//mnt/apache-tomcat-9.0.71/webapps
+'
 //                 sh 'cp /root/.jenkins/workspace/Game_Of_life/gameoflife-web/target/gameoflife.war /home/ansible'
 //              sh 'scp /root/.jenkins/workspace/Game_Of_life/gameoflife-web/target/gameoflife.war ansible@172.31.86.205:/mnt'
             }
