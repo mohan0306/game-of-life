@@ -27,7 +27,6 @@
 //             stage('continuous deploy') {
 //             steps {
 //                 sh 'cp /mnt/Jenkins_path/workspace/GOL@2/gameoflife-web/target/gameoflife.war /root/mnt/apache-tomcat-9.0.71/webapps
-'
 //             }
                
 //             }
